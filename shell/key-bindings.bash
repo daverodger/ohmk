@@ -1,14 +1,12 @@
 __oh-hai_save__() {
-	local command
-	command=$(echo "${READLINE_LINE:0}" | grep -oE '(.)+$')
-	oh-hai -i "$command"
+	oh-hai -i ${READLINE_LINE:0}
 	READLINE_LINE=""
 	READLINE_POINT=0x7fffffff
 }
 
 __oh-hai_search__() {
 	local query temp_stderr res
-	query=$(echo "${READLINE_LINE:0}" | grep -oE '(.)+$')
+	query=$(echo "${READLINE_LINE:0}" | grep -v '^$')
 	temp_stderr=$(mktemp /tmp/oh-hai_search.XXXXXX) || { echo "Failed to create temp file"; return 1; }
 	oh-hai -s "$query" 2> "$temp_stderr"
 	res=$(<"$temp_stderr")
