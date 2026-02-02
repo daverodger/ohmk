@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 
-use oh_hai::config::Config;
+use ohmk::config::Config;
 
 /// Used by installation script to establish bookmark data file path prior to initial program run
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -10,7 +10,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut data_path = PathBuf::from(path);
     data_path.push("bookmarks.json");
     let config = Config { data_path };
-    confy::store("oh-hai", None, config)?;
+    confy::store("ohmk", None, config)?;
 
     Ok(())
 }

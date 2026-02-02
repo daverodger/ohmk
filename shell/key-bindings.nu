@@ -1,22 +1,22 @@
 let oh_bindings = [
     {
-            name: "oh-hai search"
+            name: "ohmk search"
             modifier: control
             keycode: char_g
             mode: [emacs vi_normal vi_insert]
             event: {
                     send: executehostcommand
-                    cmd: "commandline | oh-hai -s $in e>| commandline edit -r $in"
+                    cmd: "commandline | ohmk -s $in e>| commandline edit -r $in"
             }
     }
     {
-            name: "oh-hai input"
+            name: "ohmk input"
             modifier: control
             keycode: char_b
             mode: [emacs vi_normal vi_insert]
             event: {
                     send: executehostcommand
-                    cmd: 'commandline | oh-hai -i $in e>| commandline edit -r $in'
+                    cmd: 'commandline | ohmk -i $in e>| commandline edit -r $in'
             }
     }
 ]

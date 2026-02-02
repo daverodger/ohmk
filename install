@@ -7,9 +7,9 @@ mkdir -p "$DATA_DIR"
 INSTALL_DIR="$HOME/.local/bin"
 
 
-echo "Create symlink $INSTALL_DIR/oh-hai"
+echo "Create symlink $INSTALL_DIR/ohmk"
 mkdir -pv "$INSTALL_DIR"
-sudo ln -sfv "$APP_DIR/oh-hai" "$INSTALL_DIR/oh-hai"
+sudo ln -sfv "$APP_DIR/ohmk" "$INSTALL_DIR/ohmk"
 
 # bash
 FILE_BASHRC=$HOME/.bashrc
@@ -34,7 +34,7 @@ fi
 NU_KEYBINDING="$APP_DIR/shell/key-bindings.nu"
 NU_AUTOLOAD="$HOME/.local/share/nushell/vendor/autoload"
 mkdir -p "$NU_AUTOLOAD"
-ln -sfv "$NU_KEYBINDING" "$NU_AUTOLOAD/oh-hai-key-bindings.nu" 
+ln -sfv "$NU_KEYBINDING" "$NU_AUTOLOAD/ohmk-key-bindings.nu" 
 
 # zsh
 FILE_ZSHRC=$HOME/.zshrc

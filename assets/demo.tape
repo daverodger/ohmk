@@ -4,7 +4,7 @@ Hide
 Backspace 100
 Type "clear"
 Enter
-Type "oh-hai -i"
+Type "ohmk -i"
 Enter
 Show
 Sleep 1s
@@ -25,7 +25,7 @@ Hide
 Backspace 100
 Type "clear"
 Enter
-Type "oh-hai -s"
+Type "ohmk -s"
 Enter
 Show
 Sleep 1s
@@ -47,7 +47,7 @@ Hide
 Backspace 100
 Type "clear"
 Enter
-Type "oh-hai -s"
+Type "ohmk -s"
 Enter
 Show
 Sleep 1s
