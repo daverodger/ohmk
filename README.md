@@ -24,11 +24,10 @@ You'll need the rustc and cargo which are best installed using [rustup](https://
 1. cd into the app directory and run `./install`
 1. Restart shell or source config file
 
-Bookmarks are saved into `./data/bookmarks.json` for manual editing.
+Bookmarks are saved into `./data/bookmarks.json`.
 
 If you need to move the app directory, run `./install` again after moving.
 
 ## Todo
 
 - Additional shell support
-- Any testing at all would be an improvement
