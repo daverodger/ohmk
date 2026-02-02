@@ -1,3 +1,4 @@
+Output demo.gif
 Type "Add a new bookmark with ctrl+b or the -i flag"
 Sleep 2s
 Hide
@@ -41,7 +42,7 @@ Type neofetch
 Show
 Sleep 2s
 Backspace 8
-Type "Realize you're silly and delete an entry with ctrl+d"
+Type "Delete an entry with ctrl+d"
 Sleep 2s
 Hide
 Backspace 100
