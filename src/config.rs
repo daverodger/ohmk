@@ -12,7 +12,7 @@ impl Default for Config {
     fn default() -> Self {
         let home_path = home::home_dir().unwrap();
         let mut dp = home_path.clone();
-        dp.push("cli/oh_hai/data/bookmarks.json");
+        dp.push("cli/ohmk/data/bookmarks.json");
         Self {
             data_path: dp,
         }
@@ -21,7 +21,7 @@ impl Default for Config {
 
 // Creates config file if not found
 fn get_config_file() -> Config {
-    let config: Config = confy::load("oh-hai", None).unwrap();
+    let config: Config = confy::load("ohmk", None).unwrap();
     config
 }
 

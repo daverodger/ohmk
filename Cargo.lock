@@ -411,7 +411,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "oh-hai"
+name = "ohmk"
 version = "0.1.0"
 dependencies = [
  "confy",

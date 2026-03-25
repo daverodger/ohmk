@@ -2,7 +2,7 @@ use std::process::exit;
 
 use handle::handle;
 use model::*;
-use oh_hai::*;
+use ohmk::*;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut terminal;

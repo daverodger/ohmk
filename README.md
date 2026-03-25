@@ -1,4 +1,4 @@
-# oh-hai
+# ohmk
 
 A terminal command bookmarking tool written in Rust using [ratatui](https://github.com/ratatui-org/ratatui).
 
@@ -6,7 +6,7 @@ Keybindings available for bash, zsh, and [nushell](https://github.com/nushell/nu
 
 Heavily inspired by [tbmk](https://github.com/linhx/tbmk).
 
-![oh-hai demo](./assets/demo.gif)
+![ohmk demo](./assets/demo.gif)
 
 ## Usage
 
@@ -20,15 +20,14 @@ The command-line buffer is copied into the search field (search mode) or the com
 
 You'll need the rustc and cargo which are best installed using [rustup](https://www.rust-lang.org/tools/install)
 
-1. Run `./build` and move the newly generated `/oh_hai` directory to its new home
+1. Run `./build` and move the newly generated `/ohmk` directory to its new home
 1. cd into the app directory and run `./install`
 1. Restart shell or source config file
 
-Bookmarks are saved into `./data/bookmarks.json` for manual editing.
+Bookmarks are saved into `./data/bookmarks.json`.
 
 If you need to move the app directory, run `./install` again after moving.
 
 ## Todo
 
 - Additional shell support
-- Any testing at all would be an improvement
